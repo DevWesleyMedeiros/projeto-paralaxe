@@ -1,0 +1,105 @@
+/*
+------------------GLOSSÁRIO--------------------
+"em" -> Significa que a medida será tantas vezes o tamanho original
+"vh" -> Significa uma determinada porcentagem em relação ao tamanho da tela em altura
+"vw" -> Siginifica uma derminada porcentagem em relação ao tamanho da largura da tela
+"*" -> Significa uma estilização geral para todo o código em CSS
+*/
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte_padrao: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    --fonte_titulos: 'Passion One', 'cursive';
+    --fonte-conteudo: 'Sriracha', 'cursive';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body { 
+    font-family: var(--fonte_padrao);
+    min-height: 100vh;
+    background-color: white;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    font-family: var(--fonte_titulos);
+    font-size: 4vw;   
+    padding-top: 50px;
+    font-variant: small-caps;   
+}
+header > p {
+    padding-bottom: 50px;
+}
+section {
+    font-family: var(--fonte-conteudo);
+    font-size: 2vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding: 30px;
+    line-height: 2em; 
+}
+section > p {
+    padding-bottom: 2em;
+}
+section.normal { 
+    background-color: white;
+    color: black;
+}
+section.imagem {   
+    background-color: rgb(72, 70, 70);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    color: white;
+}
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(0, 0, 0, 0.514);
+    background-attachment: fixed;  
+    text-shadow: 1px 1px 1px black;
+}
+section#imagem-flor {
+    background-image: url('imagens/imagem-da-flor.jpg');
+    background-position: right center;  
+}
+section#imagem-livro {  
+    background-image: url('imagens/imagem-do-livro.jpg');
+    background-position: right center;
+}
+a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover, header a:hover {  
+    text-decoration: underline;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
